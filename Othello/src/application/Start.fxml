@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StartController">
+	<center>
+		<AnchorPane fx:id="pane" prefHeight="520.0" prefWidth="480.0" BorderPane.alignment="CENTER">
+			<children>
+				<Label layoutX="166.0" layoutY="178.0" text="モードを選んでね！">
+					<font>
+						<Font size="20.0" />
+					</font>
+				</Label>
+				<RadioButton fx:id="cpu" layoutX="91.0" layoutY="251.0" mnemonicParsing="false" onAction="#onCpu" text="vsCPU">
+					<toggleGroup>
+						<ToggleGroup fx:id="vs" />
+					</toggleGroup>
+				</RadioButton>
+				<RadioButton fx:id="human" layoutX="192.0" layoutY="251.0" mnemonicParsing="false" onAction="#onHuman" text="vs自分" toggleGroup="$vs" />
+				<Button fx:id="next" layoutX="216.0" layoutY="305.0" mnemonicParsing="false" onAction="#onNext" text="Next!!" />
+            <RadioButton fx:id="cpuVsCpu" layoutX="293.0" layoutY="251.0" mnemonicParsing="false" onAction="#onCpuVsCpu" text="爆速CPUバトル" toggleGroup="$vs" />
+			</children>
+		</AnchorPane>
+	</center>
+</BorderPane>

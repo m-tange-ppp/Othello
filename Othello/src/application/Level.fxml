@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LevelController">
+	<center>
+		<AnchorPane fx:id="pane" prefHeight="520.0" prefWidth="480.0" BorderPane.alignment="CENTER">
+			<children>
+				<Label layoutX="114.0" layoutY="159.0" text="先攻後攻とレベルを選んでね！">
+					<font>
+						<Font size="20.0" />
+					</font>
+				</Label>
+				<RadioButton fx:id="level1" layoutX="78.0" layoutY="280.0" mnemonicParsing="false" onAction="#onLevel1" text="よわよわ">
+               <toggleGroup>
+                  <ToggleGroup fx:id="level" />
+               </toggleGroup>
+				</RadioButton>
+				<RadioButton fx:id="level2" layoutX="148.0" layoutY="280.0" mnemonicParsing="false" onAction="#onLevel2" text="やさしい" toggleGroup="$level" />
+				<Button fx:id="start" layoutX="214.0" layoutY="335.0" mnemonicParsing="false" onAction="#onStart" text="Start!!" />
+            <RadioButton fx:id="level3" layoutX="218.0" layoutY="280.0" mnemonicParsing="false" onAction="#onLevel3" text="まあまあ" toggleGroup="$level" />
+            <RadioButton fx:id="level4" layoutX="288.0" layoutY="280.0" mnemonicParsing="false" onAction="#onLevel4" text="現在の技術の限界" toggleGroup="$level" />
+            <RadioButton fx:id="black" layoutX="125.0" layoutY="225.0" mnemonicParsing="false" onAction="#onBlack" text="黒（先攻）">
+               <toggleGroup>
+                  <ToggleGroup fx:id="first" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="white" layoutX="270.0" layoutY="225.0" mnemonicParsing="false" onAction="#onWhite" text="白（後攻）" toggleGroup="$first" />
+			</children>
+		</AnchorPane>
+	</center>
+</BorderPane>
