@@ -42,5 +42,12 @@ JavaFX で作成したオセロゲームです。
 
 ## ライセンス
 
-GNU General Public License v2.0 に基づいて公開されています。
-詳細は[LICENSE](LICENSE)ファイルをご覧ください。
+このプロジェクトは [GNU General Public License v2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.ja.html) の下で公開されています。
+
+あなたは以下の条件の下でこのソフトウェアを自由に:
+
+- 使用する
+- 改変する
+- 再配布する
+
+ことができます。
